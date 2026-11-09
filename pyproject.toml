@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="routewise-eta"
+version="0.1.0"
+description="Estimates delivery duration from distance, stops, congestion, weather, departure hour, route complexity, and u"
+requires-python=">=3.9"
+dependencies=["numpy==2.0.2","scikit-learn==1.6.1"]
+[project.optional-dependencies]
+test=["pytest==8.4.2"]
+[tool.pytest.ini_options]
+testpaths=["tests"]
