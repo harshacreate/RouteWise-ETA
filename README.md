@@ -7,7 +7,7 @@ Estimates delivery duration from distance, stops, congestion, weather, departure
 
 ## Data and split
 
-The deterministic offline generator in `routewise/data.py` creates synthetic examples and uses no external dataset. Group IDs are not model features; the holdout keeps all rows from each route or batch together.
+The deterministic offline generator in `routewise/data.py` creates synthetic examples and uses no external dataset. Route IDs are held out as groups and kept separate from model features.
 
 ## Methods and metrics
 
@@ -30,6 +30,6 @@ Synthetic travel conditions are simplified; no live traffic data are used. The m
 
 `make setup`, `make train`, and `make test` are shortcuts. Python 3.9 or newer is required.
 
-## Code license status
+## License
 
-No code license has been selected for this new project; default copyright rules apply. Choose a license before public distribution. No external data is included.
+MIT; see [LICENSE](LICENSE). No external data is included.
